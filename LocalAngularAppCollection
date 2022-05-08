@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "97611946-7758-48c8-9031-213065e2896c",
+		"name": "LocalAngularApplication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Contacts",
+			"request": {
+				"method": "HEAD",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/server-1.0-SNAPSHOT/webapi/Contacts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"server-1.0-SNAPSHOT",
+						"webapi",
+						"Contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Contacts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/server-1.0-SNAPSHOT/webapi/Contacts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"server-1.0-SNAPSHOT",
+						"webapi",
+						"Contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Contact",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"address\": \"11 Merrick Point\",\r\n        \"email\": \"toldridge3@unc.edu\",\r\n        \"id\": 4,\r\n        \"name\": \"Tasia Oldridge\",\r\n        \"notes\": \"congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum\",\r\n        \"phone\": \"2552926925\",\r\n        \"photo\": \"https://robohash.org/eumquamexplicabo.png?size=100x100&set=set1\",\r\n        \"url\": \"http://icio.us\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/server-1.0-SNAPSHOT/webapi/Contacts/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"server-1.0-SNAPSHOT",
+						"webapi",
+						"Contacts",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"address\": \"\",\r\n\"email\": \"Shreekhedkar@gmail.com\",\r\n\"id\": 12,\r\n\"name\": \"Shreenivas Khedkar\",\r\n\"phone\": \"+449764392266\",\r\n\"photo\": \"assets/no-image.svg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/server-1.0-SNAPSHOT/webapi/Contacts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"server-1.0-SNAPSHOT",
+						"webapi",
+						"Contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Contact",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/server-1.0-SNAPSHOT/webapi/Contacts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"server-1.0-SNAPSHOT",
+						"webapi",
+						"Contacts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
